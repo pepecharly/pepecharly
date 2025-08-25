@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="classic">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Carlos Castillo | Portafolio</title>
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos base -->
+    <link rel="stylesheet" href="src/themes/base/reset.css">
+    <link rel="stylesheet" href="src/themes/base/variables.css">
+    <link rel="stylesheet" href="src/themes/base/typography.css">
+    
+    <!-- Tema actual -->
+    <link rel="stylesheet" href="src/themes/classic/theme.css" id="theme-stylesheet">
+    
+    <!-- Componentes principales -->
+    <link rel="stylesheet" href="src/ui/components/header/header.css">
+    <link rel="stylesheet" href="src/ui/components/navigation/navigation.css">
+    <link rel="stylesheet" href="src/ui/components/cv-generator/cv-generator.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="app-container">
+        <!-- Header fijo superior -->
+        <header id="main-header" class="header"></header>
+        
+        <!-- Contenido principal -->
+        <main id="main-content" class="main-content">
+            <div class="loading-screen" id="loading-screen">
+                <div class="spinner"></div>
+                <p>Cargando...</p>
+            </div>
+            
+            <!-- Módulos dinámicos -->
+            <section id="about-section" class="section"></section>
+            <section id="experience-section" class="section"></section>
+            <section id="skills-section" class="section"></section>
+            <section id="certifications-section" class="section"></section>
+            <section id="projects-section" class="section"></section>
+            <section id="contact-section" class="section"></section>
+            <section id="account-section" class="section"></section>
+        </main>
+    </div>
+    
+    <!-- Modales -->
+    <div class="modal-overlay" id="login-modal" style="display: none;"></div>
+    <div class="modal-overlay" id="cv-modal" style="display: none;"></div>
+    <div class="modal-overlay" id="edit-modal" style="display: none;"></div>
+    
+    <!-- Scripts principales con type="module" -->
+    <script type="module" src="src/core/app.js"></script>
+    <script type="module" src="src/data/data-loader.js"></script>
+    <script type="module" src="src/ui/components/header/header.js"></script>
+    <script type="module" src="src/ui/components/navigation/navigation.js"></script>
+    <script type="module" src="src/ui/views/about/about-view.js"></script>
+    <script type="module" src="src/ui/views/experience/experience-view.js"></script>
+    <script type="module" src="src/ui/views/skills/skills-view.js"></script>
+    <script type="module" src="src/ui/views/certifications/certifications-view.js"></script>
+    <script type="module" src="src/ui/views/projects/projects-view.js"></script>
+    <script type="module" src="src/ui/views/contact/contact-view.js"></script>
+    <script type="module" src="src/ui/views/account/account-view.js"></script>
+    <script type="module" src="src/ui/components/cv-generator/cv-generator.js"></script>
+    <script type="module" src="src/utils/theme-manager.js"></script>
+</body>
+</html>

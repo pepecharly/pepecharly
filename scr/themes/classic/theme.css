@@ -1,0 +1,43 @@
+:root[data-theme="classic"] {
+  /* Colores */
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --accent-color: #e74c3c;
+  --light-color: #ecf0f1;
+  --dark-color: #2c3e50;
+  --text-color: #333;
+  --text-light: #777;
+  --background: #f8f9fa;
+  --card-bg: #ffffff;
+  --shadow: var(--shadow-md);
+  --border-radius: var(--radius-md);
+  
+  /* Componentes específicos */
+  --header-bg: var(--card-bg);
+  --header-shadow: var(--shadow-sm);
+  --nav-link-color: var(--text-color);
+  --nav-link-hover: var(--primary-color);
+  --nav-link-active: var(--primary-color);
+  --section-title-color: var(--secondary-color);
+}
+
+/* Estilos específicos para el tema clásico */
+[class*="-view"] {
+  background-color: var(--background);
+}
+
+.section {
+  padding: var(--spacing-xl) 0;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition-normal);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
