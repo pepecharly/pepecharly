@@ -1,0 +1,11 @@
+:root[data-theme="darkpunk"] {
+    --primary-color: #ff00ff;
+    --background: #000000;
+    --background-light: #111111;
+    --background-light-hover: #222222;
+    --text: #00ff88;
+    --card-bg: #0a0a0a;
+    --border: #333333;
+    --input-bg: #111111;
+    --shadow: 0 0 15px rgba(255, 0, 255, 0.2);
+}

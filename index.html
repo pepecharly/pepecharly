@@ -1,130 +1,33 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="classic">
+<html lang="es" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>José Carlos Castillo | Perfil Profesional</title>
-    
-    <!-- CDNs autorizados -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- Hojas de estilo -->
-    <link id="theme-stylesheet" rel="stylesheet" href="./css/themes/classic/theme.css">
-    <link rel="stylesheet" href="./css/base/reset.css">
-    <link rel="stylesheet" href="./css/base/variables.css">
-    <link rel="stylesheet" href="./css/base/typography.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <div id="app">
-        <!-- Header component will be injected here -->
-        <header id="header-container"></header>
-        
-        <!-- Navigation component will be injected here -->
-        <nav id="nav-container"></nav>
-        
-        <!-- Main content -->
-        <main id="main-content">
-            <!-- Sections will be dynamically loaded here -->
-            <section id="about-section" class="view-section"></section>
-            <section id="experience-section" class="view-section hidden"></section>
-            <section id="projects-section" class="view-section hidden"></section>
-            <section id="skills-section" class="view-section hidden"></section>
-            <section id="tools-section" class="view-section hidden"></section>
-            <section id="certifications-section" class="view-section hidden"></section>
-            <section id="contact-section" class="view-section hidden"></section>
-        </main>
-        
-        <!-- Footer component will be injected here -->
-        <footer id="footer-container"></footer>
-        
-        <!-- Theme selector modal -->
-        <div id="theme-modal" class="modal hidden">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <h2 data-i18n="themeSelector">Seleccionar Tema</h2>
-                <div class="theme-options">
-                    <div class="theme-option" data-theme="classic">
-                        <div class="theme-preview classic-theme"></div>
-                        <span data-i18n="themeClassic">Clásico</span>
-                    </div>
-                    <div class="theme-option" data-theme="dark">
-                        <div class="theme-preview dark-theme"></div>
-                        <span data-i18n="themeDark">Oscuro</span>
-                    </div>
-                    <div class="theme-option" data-theme="linkedin">
-                        <div class="theme-preview linkedin-theme"></div>
-                        <span data-i18n="themeLinkedIn">LinkedIn</span>
-                    </div>
-                    <div class="theme-option" data-theme="neumorphism">
-                        <div class="theme-preview neumorphism-theme"></div>
-                        <span data-i18n="themeNeumorphism">Neumorfismo</span>
-                    </div>
-                    <div class="theme-option" data-theme="darkpunk">
-                        <div class="theme-preview darkpunk-theme"></div>
-                        <span data-i18n="themeDarkPunk">Dark Punk</span>
-                    </div>
-                    <div class="theme-option" data-theme="neon">
-                        <div class="theme-preview neon-theme"></div>
-                        <span data-i18n="themeNeon">Neón</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Login modal -->
-        <div id="login-modal" class="modal hidden">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <h2 data-i18n="loginTitle">Iniciar Sesión</h2>
-                <form id="login-form">
-                    <div class="form-group">
-                        <label for="username" data-i18n="username">Usuario:</label>
-                        <input type="text" id="username" name="username" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password" data-i18n="password">Contraseña:</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <button type="submit" data-i18n="loginButton">Iniciar Sesión</button>
-                </form>
-            </div>
-        </div>
-        
-        <!-- Export modal -->
-        <div id="export-modal" class="modal hidden">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <h2 data-i18n="exportTitle">Exportar CV</h2>
-                <div class="export-options">
-                    <div class="export-option" data-format="pdf">
-                        <i class="fas fa-file-pdf"></i>
-                        <span data-i18n="exportPDF">PDF</span>
-                    </div>
-                    <div class="export-option" data-format="docx">
-                        <i class="fas fa-file-word"></i>
-                        <span data-i18n="exportDOCX">DOCX</span>
-                    </div>
-                </div>
-                <div class="template-options">
-                    <h3 data-i18n="templateTitle">Plantilla:</h3>
-                    <select id="template-select">
-                        <option value="professional" data-i18n="templateProfessional">Profesional</option>
-                        <option value="modern" data-i18n="templateModern">Moderno</option>
-                        <option value="creative" data-i18n="templateCreative">Creativo</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </div>
+    <title data-es="José Carlos Castillo | Perfil Profesional" data-en="José Carlos Castillo | Professional Profile">
+        José Carlos Castillo | Perfil Profesional
+    </title>
 
-    <!-- Scripts de terceros -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tema dinámico -->
+    <link id="theme-stylesheet" rel="stylesheet" href="css/themes/classic/theme.css">
+</head>
+<body class="transition-colors duration-300">
+    <div id="app"></div>
+
+    <!-- CDNs Autorizados -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/7.4.1/docx.js"></script>
     <script src="https://unpkg.com/file-saver/dist/FileSaver.min.js"></script>
 
-    <!-- Módulos de la aplicación -->
-    <script type="module" src="./js/core/app.js"></script>
+    <!-- Punto de entrada -->
+    <script type="module" src="js/core/app.js"></script>
 </body>
 </html>

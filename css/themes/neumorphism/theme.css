@@ -1,0 +1,11 @@
+:root[data-theme="linkedin"] {
+    --primary-color: #0077b5;
+    --background: #f3f2ef;
+    --background-light: #e9e8e6;
+    --background-light-hover: #dcdad7;
+    --text: #333333;
+    --card-bg: #ffffff;
+    --border: #d0d0d0;
+    --input-bg: #ffffff;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
